@@ -4,8 +4,11 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import '@babel/polyfill'
+import { Blank, Default } from '@/layouts/index'
 
 Vue.config.productionTip = false
+Vue.component('default-layout', Default)
+Vue.component('blank-layout', Blank)
 
 new Vue({
   router,
